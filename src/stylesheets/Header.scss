@@ -1,0 +1,10 @@
+@import "../stylesheets/Global.scss";
+
+.header--wrapper {
+  height: 75vh;
+  width: 100vw;
+  background-image: url("../images//HomeFeature.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}

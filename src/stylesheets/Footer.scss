@@ -1,0 +1,38 @@
+@import "../stylesheets/Global.scss";
+
+.footer--wrapper {
+  display: flex;
+  flex-direction: row;
+  height: 50vh;
+  width: 100%;
+  background-color: white;
+  @include for-phone-only {
+    flex-direction: column;
+  }
+}
+
+.footer_right {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  padding-left: 1%;
+}
+
+.footer_left {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  padding-left: 1%;
+}
+
+.footer--img_wrapper {
+  height: 40vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer--img {
+  width: 80%;
+}

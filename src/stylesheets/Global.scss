@@ -1,0 +1,101 @@
+@font-face {
+  font-family: "Ohno";
+  src: url("../fonts/Ohno_Blazeface-18_Point.woff");
+}
+@font-face {
+  font-family: "Voyage";
+  src: url("../fonts/Voyage-Regular.woff2");
+}
+
+/* COLORS */
+$primary-color-0: #130972;
+$primary-color-1: #f78765;
+$primary-color-2: #19afd0;
+$primary-color-3: #fcf596;
+$primary-color-4: #19afd0;
+$primary-color-5: #6f8fb4;
+
+/* FONT FAMILY */
+$font-family-sans-serif: "Mulish", sans-serif;
+$font-family-serif: "Ohno";
+$font-family-voyage: "Voyage";
+
+/* MEDIA QUERIES */
+@mixin for-phone-only {
+  @media (max-width: 599px) {
+    @content;
+  }
+}
+@mixin for-tablet-portrait-up {
+  @media (min-width: 600px) {
+    @content;
+  }
+}
+@mixin for-tablet-landscape-up {
+  @media (min-width: 900px) {
+    @content;
+  }
+}
+@mixin for-desktop-up {
+  @media (min-width: 1200px) {
+    @content;
+  }
+}
+@mixin for-big-desktop-up {
+  @media (min-width: 1800px) {
+    @content;
+  }
+}
+
+:root {
+  --font-size-xs: 14px;
+  --font-size-sm: 22px;
+  --font-size-md: 2rem;
+  --font-size-lg: 2.75rem;
+  --font-size-xl: 4.375rem;
+  --font-size-xxl: 12.375rem;
+  --spacer: 8px;
+}
+
+@media (max-width: 899.98px) {
+  :root {
+    --font-size-xs: 13px;
+    --font-size-sm: 18px;
+    --font-size-md: 1.4rem;
+    --font-size-lg: 2rem;
+    --font-size-xl: 3.5rem;
+    --font-size-xxl: 8rem;
+  }
+}
+
+@media (max-width: 575.98px) {
+  :root {
+    --font-size-xs: 12px;
+    --font-size-sm: 14px;
+    --font-size-md: 20px;
+    --font-size-lg: 28px;
+    --font-size-xl: 40px;
+    --font-size-xxl: 60px;
+  }
+}
+
+body {
+  background-color: $primary-color-1;
+  height: 100%;
+  font-family: $font-family-sans-serif;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  height: 100vh;
+}
+
+#root {
+  height: 100vh;
+}
+
+.App {
+  height: 100vh;
+}
+
+.home--wrapper {
+  height: 100vh;
+}

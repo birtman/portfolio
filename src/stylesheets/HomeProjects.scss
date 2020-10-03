@@ -1,0 +1,15 @@
+@import "../stylesheets/Global.scss";
+
+.homeprojects--wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  background: linear-gradient(
+    180deg,
+    rgba(247, 135, 101, 1) 24%,
+    rgba(16, 27, 95, 0) 100%
+  );
+  @include for-phone-only {
+    flex-direction: column;
+  }
+}

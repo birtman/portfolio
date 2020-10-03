@@ -1,0 +1,15 @@
+nav {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  height: 50px;
+  width: 100%;
+  align-items: center;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+}
+.nav--items a {
+  margin: 4%;
+}

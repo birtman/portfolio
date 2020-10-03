@@ -1,0 +1,55 @@
+@import "../stylesheets/Global.scss";
+
+.nav--wrapper {
+  display: inline-flex;
+  font-family: $font-family-voyage;
+  cursor: pointer;
+  text-align: center;
+  justify-content: space-between;
+  width: 100%;
+  user-select: none;
+  position: fixed;
+  z-index: 100;
+  background: rgb(247, 135, 101);
+  background: linear-gradient(
+    180deg,
+    rgba(247, 135, 101, 1) 24%,
+    rgba(16, 27, 95, 0) 100%
+  );
+}
+
+/* .nav--links {
+  box-shadow: 0 0 60px 30px #fff, 0 0 100px 60px #f0f, 0 0 140px 90px #0ff;
+  border-radius: 50%;
+}
+ */
+.nav--items {
+  font-size: var(--font-size-lg);
+  z-index: 1;
+  color: $primary-color-2;
+  letter-spacing: 0.05em;
+  &:nth-child(1) {
+    padding-left: 2%;
+    padding-top: 2%;
+  }
+  &:nth-child(2) {
+    font-size: var(--font-size-xxl);
+    letter-spacing: 0em;
+  }
+  &:nth-child(3) {
+    padding-right: 2%;
+    padding-top: 2%;
+  }
+}
+
+a {
+  color: $primary-color-0;
+  cursor: pointer;
+  text-decoration: none;
+}
+a:hover {
+  color: $primary-color-5;
+  cursor: pointer;
+  text-decoration: none;
+  transition: 0.5s;
+}

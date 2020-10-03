@@ -1,0 +1,17 @@
+@font-face {
+  font-family: "OhnoBlazeface";
+  src: local("OhnoBlazeface"),
+    url(./fonts/Ohno_Blazeface-18_Point.ttf) format("truetype");
+}
+
+body {
+  margin: 0;
+  font-family: OhnoBlazeface;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
