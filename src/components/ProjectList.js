@@ -1,6 +1,6 @@
 import projects from "../data/data";
 import current from "../data/current";
-import { Link } from "react-router-dom";
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import { connect } from "react-redux";
 import "../stylesheets/Projects.scss";
 import React, { useParams, useState, useEffect } from "react";
@@ -59,6 +59,10 @@ export function ProjectList(props) {
                   alt="project"
                 />
               </Link>
+              <Route
+                path={`/projects/:${item.title}`}
+                component={ProjectDetail}
+              />
             </div>
           ))}
         </div>
