@@ -4,9 +4,10 @@ import Footer from "./Footer";
 import { connect } from "react-redux";
 import { Link, Redirect } from "react-router-dom";
 
-export function ProjectDetails(props) {
+export function ProjectDetail(props) {
   return (
     <div>
+      <Nav />
       <h1 className="">{props.project.title}</h1>
       <Footer />
     </div>
@@ -19,4 +20,4 @@ const mapStateToProps = (state) => {
   };
 };
 
-export default connect(mapStateToProps)(ProjectDetails);
+export default connect(mapStateToProps)(ProjectDetail);

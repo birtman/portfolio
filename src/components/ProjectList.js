@@ -51,7 +51,7 @@ export function ProjectList(props) {
             <div key={item.title} className="projects--item">
               <Link
                 className="list--projects_right"
-                to="/projectdetails"
+                to="/projectdetail"
                 onClick={() => {
                   props.dispatch({
                     type: "SELECT_PROJECT",
