@@ -28,6 +28,15 @@ export default class App extends Component {
             <Route path="/projects/:id">
               <ProjectDetails />
             </Route>
+            {/*     <Route
+              path="/projects"
+              render={(routerProps) => (
+                <Projects
+                  {...routerProps}
+                  projectdata={this.state.projectdata}
+                />
+              )}
+            /> */}
             <Route path="/about">
               <About />
             </Route>

@@ -47,11 +47,11 @@ export function ProjectList(props) {
       </div>
       <div className="projects--flex">
         <div className="projects--items">
-          {projectlist.map((item, index) => (
-            <div key={item.index} className="projects--item">
+          {projectlist.map((item) => (
+            <div key={item.title} className="projects--item">
               <Link
                 className="list--projects_right"
-                /* to={`/projects/:${params.id}`} */
+                to={`/projects/:${item.title}`}
               >
                 <img
                   className="list--project_img"
