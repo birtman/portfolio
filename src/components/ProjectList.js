@@ -51,7 +51,13 @@ export function ProjectList(props) {
             <div key={item.title} className="projects--item">
               <Link
                 className="list--projects_right"
-                to={`/projects/:${item.title}`}
+                to="/projectdetails"
+                onClick={() => {
+                  props.dispatch({
+                    type: "SELECT_PROJECT",
+                    project: item,
+                  });
+                }}
               >
                 <img
                   className="list--project_img"
@@ -59,10 +65,6 @@ export function ProjectList(props) {
                   alt="project"
                 />
               </Link>
-              <Route
-                path={`/projects/:${item.title}`}
-                component={ProjectDetail}
-              />
             </div>
           ))}
         </div>
