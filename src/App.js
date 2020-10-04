@@ -5,7 +5,7 @@ import About from "./components/About";
 import Contact from "./components/Contact";
 import Projects from "./components/Projects";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
-import ProjectDetails from "./components/ProjectDetail";
+import ProjectDetail from "./components/ProjectDetail";
 import projectdata from "../src/data/data";
 
 export default class App extends Component {
@@ -25,13 +25,16 @@ export default class App extends Component {
             <Route path="/projects">
               <Projects />
             </Route>
-            {projectdata.map((item) => (
+            <Route path="/projectdetail">
+              <ProjectDetail />
+            </Route>
+            {/*   {projectdata.map((item) => (
               <div key={item.title}>
                 <Route path={`/projects/:${item.title}`}>
                   <ProjectDetails />
                 </Route>
               </div>
-            ))}
+            ))} */}
 
             {/*     <Route
               path="/projects"
