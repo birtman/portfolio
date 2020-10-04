@@ -5,8 +5,6 @@ import Footer from "./Footer";
 const ProjectDetails = () => {
   return (
     <div>
-      <Nav />
-
       <Footer />
     </div>
   );
