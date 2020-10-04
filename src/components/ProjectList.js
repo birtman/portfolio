@@ -18,8 +18,6 @@ export function ProjectList(props) {
     setProjects([...projects.filter((p) => p.category.includes(filter))]);
   }, [filter]);
 
-  /*   let params = useParams(); */
-
   return (
     <div className="projects--wrapper">
       <div className="project--filter">

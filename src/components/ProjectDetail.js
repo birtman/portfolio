@@ -3,12 +3,26 @@ import Nav from "./Nav";
 import Footer from "./Footer";
 import { connect } from "react-redux";
 import { Link, Redirect } from "react-router-dom";
+import "../stylesheets/ProjectDetail.scss";
 
 export function ProjectDetail(props) {
   return (
-    <div>
+    <div className="projectdetail--wrapper">
       <Nav />
-      <h1 className="">{props.project.title}</h1>
+
+      <div className="projectdetail--header">
+        <div className="projectdetail_left">
+          <img
+            className="projectdetail--img"
+            src={props.project.image}
+            alt="project"
+          />
+        </div>
+      </div>
+      <div className="projectdetail_right">
+        <h1 className="">{props.project.title}</h1>
+      </div>
+
       <Footer />
     </div>
   );

@@ -1,0 +1,29 @@
+@import "../stylesheets/Global.scss";
+
+.projectdetail--wrapper {
+  width: 100%;
+  background-color: white;
+  height: 2000px;
+}
+
+.projectdetail--header {
+  width: 100%;
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $primary-color-1;
+}
+
+.projectdetail_right {
+  width: 50%;
+}
+
+.projectdetail_left {
+  width: 50%;
+  overflow: hidden;
+}
+
+.projectdetail--img {
+  min-width: 100%;
+}
