@@ -25,9 +25,14 @@ export default class App extends Component {
             <Route path="/projects">
               <Projects />
             </Route>
-            <Route path="/projects/:id">
-              <ProjectDetails />
-            </Route>
+            {projectdata.map((item) => (
+              <div key={item.title}>
+                <Route path={`/projects/:${item.title}`}>
+                  <ProjectDetails />
+                </Route>
+              </div>
+            ))}
+
             {/*     <Route
               path="/projects"
               render={(routerProps) => (
