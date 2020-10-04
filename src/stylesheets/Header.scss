@@ -1,10 +1,56 @@
 @import "../stylesheets/Global.scss";
 
 .header--wrapper {
-  height: 75vh;
+  height: 100vh;
   width: 100vw;
   background-image: url("../images//HomeFeature.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+}
+
+.header--animation_wrap {
+  background-color: $primary-color-0;
+  height: 100vh;
+  width: 100vw;
+  z-index: 100;
+  animation: FadeIn forwards 1s ease-out;
+  animation-delay: 3s;
+  pointer-events: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.FadeIn {
+  opacity: 1;
+}
+
+@keyframes FadeIn {
+  100% {
+    transform: scale(1.03);
+    opacity: 0;
+  }
+}
+
+.header--img {
+  width: 60%;
+  @include for-phone-only {
+    width: 100%;
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .header--img {
+    animation: kompass-spin infinite 30s linear;
+  }
+}
+
+@keyframes kompass-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }

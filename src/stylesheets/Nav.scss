@@ -10,6 +10,8 @@
   user-select: none;
   position: fixed;
   z-index: 100;
+  transform: translateY(0);
+  transition: transform 0.3s ease;
   background: rgb(247, 135, 101);
   background: linear-gradient(
     180deg,
@@ -18,11 +20,10 @@
   );
 }
 
-/* .nav--links {
-  box-shadow: 0 0 60px 30px #fff, 0 0 100px 60px #f0f, 0 0 140px 90px #0ff;
-  border-radius: 50%;
+.nav--wrapper.hidden {
+  transform: translateY(-110%);
 }
- */
+
 .nav--items {
   font-size: var(--font-size-lg);
   z-index: 1;

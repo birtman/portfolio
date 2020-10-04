@@ -19,11 +19,17 @@
 .homebread--img {
   max-width: 90%;
   padding: 6%;
+  opacity: 0;
+
   @include for-phone-only {
     max-width: 100%;
     padding: 0%;
     margin-bottom: 10%;
   }
+}
+
+.homebread--img.showed {
+  opacity: 1;
 }
 
 .homebread--intro {

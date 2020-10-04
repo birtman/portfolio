@@ -6,7 +6,9 @@
   justify-content: center;
   align-items: center;
   width: 100%;
-  margin-top: 10%;
+  padding-top: 20%;
+  background-color: white;
+  font-family: $font-family-voyage;
 }
 
 @media only screen and (max-width: 900px) {
@@ -23,22 +25,25 @@
   flex-flow: row wrap;
   justify-content: space-between;
   align-items: center;
+  @include for-phone-only {
+    flex-direction: column;
+  }
 }
 
 .projects--item {
   position: relative;
   overflow: hidden;
-  width: 45%;
-  height: 45%;
-  border-width: 0.05em;
-  border-style: solid;
-  border-color: $primary-color-0;
-  margin: 2%;
-}
-
-.portfolio-nav {
-  position: absolute;
-  top: 200px;
+  width: 30%;
+  height: 200px;
+  margin: 1%;
+  @include for-phone-only {
+    flex-direction: column;
+    width: 100%;
+  }
+  @include for-desktop-up {
+    flex-direction: column;
+    width: 20%;
+  }
 }
 
 .project--filter {
@@ -48,8 +53,6 @@
   top: 20px;
   z-index: 20;
   width: 90%;
-  border-top: 0.001em solid $primary-color-0;
-  border-bottom: 0.001em solid $primary-color-0;
   flex-direction: row;
 
   a {
@@ -60,7 +63,7 @@
     justify-content: center;
     align-items: center;
     position: relative;
-    font-size: var(--font-size-xs);
+    font-size: var(--font-size-sm);
     letter-spacing: 0.18em;
     text-transform: uppercase;
   }
@@ -73,7 +76,6 @@
 }
 
 .projects--title_wrap {
-  font-family: $font-family-serif;
   font-size: var(--font-size-md);
   bottom: 0;
   width: 100%;

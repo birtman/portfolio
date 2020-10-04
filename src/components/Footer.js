@@ -11,9 +11,6 @@ export default function Footer() {
         <span className="footer--span">Saarbrücken</span>
         <span className="footer--span">Amsterdam</span>
       </div>
-      <div className="footer--img_wrapper">
-        <img className="footer--img" src={Kompass} alt="bread projects" />
-      </div>
       <div className="footer_right">
         <p className="footer--p">Links</p>
         <Link to="/imprint" className="footer--span">
