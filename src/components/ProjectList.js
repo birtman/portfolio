@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import { connect } from "react-redux";
 import "../stylesheets/Projects.scss";
 import React, { useParams, useState, useEffect } from "react";
-import ProjectDetails from "./ProjectDetail";
+import ProjectDetail from "./ProjectDetail";
 
 export function ProjectList(props) {
   const [filter, setFilter] = useState("all");

@@ -6,7 +6,7 @@ import test4 from "../images/4.png";
 
 const projects = [
   {
-    title: "Die Kleinstadt",
+    title: "Test 2",
     subtitle: "A note calendar with declarations of love to everyday life",
     specs:
       "Birte Spreuer and Daniela Spinelli collect little moments of happiness, which we all usually restlessly rush past. Mischievous or cheeky, cheerful or thoughtful, they awaken memories and tickle desires with little provocations.",
@@ -20,7 +20,7 @@ const projects = [
     category: ["poster", "all"],
   },
   {
-    title: "Die Kleinstadt",
+    title: "Test 3",
     subtitle: "A note calendar with declarations of love to everyday life",
     specs:
       "Birte Spreuer and Daniela Spinelli collect little moments of happiness, which we all usually restlessly rush past. Mischievous or cheeky, cheerful or thoughtful, they awaken memories and tickle desires with little provocations.",
@@ -216,7 +216,7 @@ const projects = [
     category: ["editorial"],
   },
   {
-    title: "Die Kleinstadt",
+    title: "Test 1",
     subtitle: "A note calendar with declarations of love to everyday life",
     specs:
       "Birte Spreuer and Daniela Spinelli collect little moments of happiness, which we all usually restlessly rush past. Mischievous or cheeky, cheerful or thoughtful, they awaken memories and tickle desires with little provocations.",
