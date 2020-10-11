@@ -11,7 +11,7 @@ export function ProjectDetail(props) {
       <Nav />
 
       <div className="projectdetail--header">
-        <div className="projectdetail_left">
+        <div className="projectdetail--img_wrapper">
           <img
             className="projectdetail--img"
             src={props.project.image}
@@ -19,10 +19,9 @@ export function ProjectDetail(props) {
           />
         </div>
       </div>
-      <div className="projectdetail_right">
-        <h1 className="">{props.project.title}</h1>
-      </div>
-
+      <div className="projectdetail_title">
+          <h1 className="">{props.project.title}</h1>
+        </div>
       <Footer />
     </div>
   );
