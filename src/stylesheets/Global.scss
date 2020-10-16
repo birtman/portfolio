@@ -13,7 +13,7 @@ $primary-color-1: #f78765;
 $primary-color-2: #19afd0;
 $primary-color-3: #fcf596;
 $primary-color-4: #19afd0;
-$primary-color-5: #6f8fb4;
+$primary-color-5: #a3c0c7;
 
 /* FONT FAMILY */
 $font-family-sans-serif: "Karla", sans-serif;
@@ -48,41 +48,83 @@ $font-family-voyage: "Voyage";
 }
 
 :root {
-  --font-size-xs: 14px;
+  --font-size-xs: 16px;
   --font-size-sm: 22px;
   --font-size-md: 2rem;
   --font-size-lg: 2.75rem;
   --font-size-xl: 4.375rem;
-  --font-size-xxl: 12.375rem;
-  --spacer: 8px;
+  --font-size-xxl: 13rem;
+  --spacer: 3vw;
 }
 
 @media (max-width: 899.98px) {
   :root {
-    --font-size-xs: 13px;
+    --font-size-xs: 14px;
     --font-size-sm: 18px;
     --font-size-md: 1.4rem;
     --font-size-lg: 2rem;
     --font-size-xl: 3.5rem;
-    --font-size-xxl: 8rem;
+    --font-size-xxl: 6rem;
+    --spacer: 2.5vw;
   }
 }
 
 @media (max-width: 575.98px) {
   :root {
-    --font-size-xs: 12px;
-    --font-size-sm: 14px;
+    --font-size-xs: 14px;
+    --font-size-sm: 16px;
     --font-size-md: 20px;
     --font-size-lg: 28px;
     --font-size-xl: 40px;
-    --font-size-xxl: 60px;
+    --font-size-xxl: 6rem;
+    --spacer: 2vw;
   }
 }
 
+/* Spacing, Margins, Grid */
+
 h1 {
-  font-size: var(--font-size-xl);
+  font-size: var(--font-size-xxl);
+  padding-left: calc(var(--spacer) * 1);
   font-family: $font-family-voyage;
   color: $primary-color-0;
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: inherit;
+  line-height: 1;
+  @include for-tablet-portrait-up {
+    padding-left: calc(var(--spacer) * 1);
+  }
+}
+
+h4 {
+  font-family: $font-family-voyage;
+  text-transform: uppercase;
+  letter-spacing: 0.3em;
+  display: block;
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+  line-height: 1.7;
+  font-size: var(--font-size-sm);
+  padding-bottom: 6px;
+}
+
+p {
+  font-size: var(--font-size-lg);
+  display: block;
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  line-height: 1.7;
+  @include for-tablet-portrait-up {
+    font-size: var(--font-size-sm);
+  }
 }
 
 body {
@@ -104,4 +146,26 @@ body {
 
 .home--wrapper {
   height: 100vh;
+}
+
+.container {
+  padding: calc(var(--spacer) * 2);
+  display: flex;
+  width: calc(100%- --spacer);
+  @include for-tablet-portrait-up {
+    padding: calc(var(--spacer) * 1);
+  }
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  padding-top: var(--spacer);
+}
+
+.col {
+  padding-bottom: var(--spacer);
+  display: flex;
+  flex-direction: column;
+  width: 100%;
 }

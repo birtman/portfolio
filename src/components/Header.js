@@ -5,9 +5,10 @@ import Kompass from "../images/Kompass.svg";
 const Header = () => {
   return (
     <div className="header--wrapper">
-      <div className="header--animation_wrap">
+      <div className="header--frame"></div>
+      {/* <div className="header--animation_wrap">
         <img className="header--img" src={Kompass} alt="bread projects" />
-      </div>
+      </div> */}
     </div>
   );
 };

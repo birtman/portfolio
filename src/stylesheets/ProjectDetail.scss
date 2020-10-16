@@ -1,29 +1,68 @@
 @import "../stylesheets/Global.scss";
 
 .projectdetail--wrapper {
-  width: 100%;
+  width: 100vw;
   background-color: white;
-  height: 2000px;
 }
 
 .projectdetail--header {
   width: 100%;
-  height: 60vh;
+  height: 40vh;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: $primary-color-1;
-}
-
-.projectdetail_right {
-  width: 50%;
-}
-
-.projectdetail_left {
-  width: 50%;
-  overflow: hidden;
+  @include for-phone-only {
+    height: 30vh;
+  }
 }
 
 .projectdetail--img {
-  min-width: 100%;
+  width: 100%;
+
+  @include for-phone-only {
+    min-width: 200%;
+  }
+}
+
+.specs--wrapper {
+  width: calc(100%- --spacer);
+  flex-direction: column;
+  @include for-desktop-up {
+    flex-direction: row;
+  }
+}
+
+.specs--left {
+  width: 100%;
+  @include for-desktop-up {
+    width: 50%;
+  }
+}
+
+.specs--right {
+  width: 100%;
+  padding-left: 0%;
+  @include for-desktop-up {
+    width: 50%;
+    padding-left: 3%;
+  }
+}
+
+.specs--col {
+  width: calc(100%- --spacer);
+  padding-top: calc(var(--spacer) * 2);
+  @include for-tablet-portrait-up {
+    padding-top: calc(var(--spacer) / 2);
+  }
+}
+
+.specs--left_col {
+  &:nth-child(1) {
+    padding-right: 6%;
+  }
+  &:nth-child(2) {
+    font-size: var(--font-size-xxl);
+    padding-left: 6%;
+  }
 }

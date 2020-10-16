@@ -1,17 +1,24 @@
 @import "../stylesheets/Global.scss";
 
 .header--wrapper {
-  height: 100vh;
+  height: 70vh;
   width: 100vw;
   background-image: url("../images//HomeFeature.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  box-shadow: inset 0px -65px 47px rgba(19, 9, 114, 0.25);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @include for-phone-only {
+    height: 70vh;
+  }
 }
 
 .header--animation_wrap {
   background-color: $primary-color-0;
-  height: 100vh;
+  height: 70vh;
   width: 100vw;
   z-index: 100;
   animation: FadeIn forwards 1s ease-out;
@@ -52,5 +59,17 @@
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+.header--frame {
+  position: absolute;
+  width: calc(100% - (var(--spacer)));
+  border: $primary-color-1 2px solid;
+  height: calc(70% - (var(--spacer)));
+  box-shadow: 0px -45px 47px $primary-color-1;
+  @include for-phone-only {
+    width: calc(100% - (calc(var(--spacer)) * 4));
+    height: calc(70% - (calc(var(--spacer)) * 4));
   }
 }

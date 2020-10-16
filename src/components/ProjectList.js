@@ -5,6 +5,8 @@ import { connect } from "react-redux";
 import "../stylesheets/Projects.scss";
 import React, { useParams, useState, useEffect } from "react";
 import ProjectDetail from "./ProjectDetail";
+import "../stylesheets/ProjectList.scss";
+
 
 export function ProjectList(props) {
   const [filter, setFilter] = useState("all");
@@ -22,25 +24,16 @@ export function ProjectList(props) {
     <div className="projects--wrapper">
       <div className="project--filter">
         <a active={filter === "all"} onClick={() => setFilter("all")}>
-          All
+          everything
         </a>
-        <a active={filter === "print"} onClick={() => setFilter("poster")}>
-          Print
+        <a active={filter === "analog"} onClick={() => setFilter("analog")}>
+        analog
+        </a>
+        <a active={filter === "digital"} onClick={() => setFilter("digital")}>
+          digital
         </a>
         <a active={filter === "code"} onClick={() => setFilter("code")}>
-          Code
-        </a>
-        <a active={filter === "web"} onClick={() => setFilter("web")}>
-          Web
-        </a>
-        <a active={filter === "branding"} onClick={() => setFilter("branding")}>
-          Branding
-        </a>
-        <a
-          active={filter === "collaboration"}
-          onClick={() => setFilter("collaboration")}
-        >
-          Illustration
+          code
         </a>
       </div>
       <div className="projects--flex">

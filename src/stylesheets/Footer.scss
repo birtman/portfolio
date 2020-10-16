@@ -5,7 +5,14 @@
   flex-direction: row;
   height: 50vh;
   width: 100%;
-  background-color: white;
+  background-color: $primary-color-0;
+  color: $primary-color-1;
+  background-image: url("../images/SVGs/Topo.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  font-size: var(--font-size-xl);
+  font-family: $font-family-voyage;
   @include for-phone-only {
     flex-direction: column;
   }
@@ -15,12 +22,27 @@
   display: flex;
   flex-direction: column;
   width: 50%;
-  padding-left: 1%;
+  padding: var(--spacer);
+  @include for-phone-only {
+    width: 70%;
+  }
 }
 
 .footer_left {
   display: flex;
   flex-direction: column;
   width: 50%;
-  padding-left: 1%;
+  padding: var(--spacer);
+  @include for-phone-only {
+    width: 70%;
+  }
+}
+
+.footer--p {
+  font-size: var(--font-size-sm);
+  font-family: $font-family-sans-serif;
+}
+
+.footer--link {
+  color: white;
 }

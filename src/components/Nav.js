@@ -3,8 +3,15 @@ import "../stylesheets/Nav.scss";
 import "../stylesheets/Global.scss";
 import React, { useState } from "react";
 import useDocumentScrollThrottled from "../helpers/useDocumentScrollThrottled";
+import styled from "styled-components";
 
-export default function Nav() {
+
+
+export default function Nav(props) {
+
+  const red = "red"
+  const blue = "blue"
+
   const [shouldHideHeader, setShouldHideHeader] = useState(false);
   const [shouldShowShadow, setShouldShowShadow] = useState(false);
 
@@ -26,10 +33,10 @@ export default function Nav() {
   const shadowStyle = shouldShowShadow ? "shadow" : "";
   const hiddenStyle = shouldHideHeader ? "hidden" : "";
   return (
-    <nav className={`nav--wrapper ${shadowStyle} ${hiddenStyle}`}>
+    <div className={`nav--wrapper ${shadowStyle} ${hiddenStyle}`}>
       <div className="nav--items">
         <Link to="/projects" className="nav--links">
-          Projects
+          projects
         </Link>
       </div>
       <div className="nav--items">
@@ -39,9 +46,9 @@ export default function Nav() {
       </div>
       <div className="nav--items">
         <Link to="/about" className="nav--links">
-          About
+          about  
         </Link>
       </div>
-    </nav>
+    </div>
   );
 }

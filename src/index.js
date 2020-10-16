@@ -10,6 +10,8 @@ import { Provider } from "react-redux";
 import allReducers from "./reducers/index";
 import thunk from "redux-thunk";
 import { composeWithDevTools } from "redux-devtools-extension";
+import test1 from "../src/images/Feature_Dimensions.png";
+
 
 const store = createStore(
   allReducers,

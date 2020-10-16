@@ -14,22 +14,20 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  &:hover {
+    background-color: $primary-color-1;
+    transition: 0.8s;
+  }
 }
 
 .homebread--img {
   max-width: 90%;
   padding: 6%;
-  opacity: 0;
-
   @include for-phone-only {
     max-width: 100%;
     padding: 0%;
     margin-bottom: 10%;
   }
-}
-
-.homebread--img.showed {
-  opacity: 1;
 }
 
 .homebread--intro {
@@ -38,6 +36,9 @@
   display: flex;
   align-items: flex-start;
   flex-direction: column;
+  & h1 {
+    color: $primary-color-1;
+  }
   & p {
     font-family: $font-family-voyage;
     display: block;
@@ -47,15 +48,34 @@
     margin-inline-end: 0px;
     @include for-phone-only {
       margin-block-start: 0.4em;
-      padding: 1.5%;
     }
   }
   & span {
-    font-family: $font-family-sans-serif;
-    font-size: var(--font-size-sm);
-    margin-bottom: 1em;
+    font-family: $font-family-voyage;
+    font-size: var(--font-size-xl);
+    margin-bottom: (calc(var(--spacer) * 2));
     border-top: solid 0.5px $primary-color-1;
+    width: calc(100%-var(--spacer));
+    padding-left: var(--spacer);
+
     width: 100%;
-    padding: 2%;
   }
+}
+
+.homebread--hover {
+  color: $primary-color-0;
+  font-family: $font-family-voyage;
+  font-size: var(--font-size-xl);
+  position: absolute;
+  padding-left: (calc(var(--spacer) * 1));
+  opacity: 0;
+
+  &:hover {
+    opacity: 1;
+    transition: 1s;
+  }
+}
+
+.homebread--img_wrapper {
+  position: relative;
 }
