@@ -4,9 +4,8 @@
   display: inline-flex;
   font-family: $font-family-voyage;
   cursor: pointer;
-  text-align: center;
   justify-content: space-between;
-  width: 100%;
+  width: 100vw;
   user-select: none;
   position: fixed;
   z-index: 100;
@@ -21,6 +20,12 @@
   );
   @include for-phone-only {
     height: 30vh;
+    background: rgb(247, 135, 101);
+    background: linear-gradient(
+      180deg,
+      rgba(247, 135, 101, 1) 40%,
+      rgba(16, 27, 95, 0) 60%
+    );
   }
 }
 
@@ -32,6 +37,7 @@
   font-size: var(--font-size-xl);
   z-index: 1;
   color: $primary-color-2;
+  width: 33.33%;
 
   @include for-phone-only {
     font-size: var(--font-size-lg);
@@ -39,13 +45,16 @@
 
   &:nth-child(1) {
     padding: var(--spacer);
+    text-align: left;
   }
   &:nth-child(2) {
     font-size: var(--font-size-xxl);
     letter-spacing: 0em;
+    text-align: center;
   }
   &:nth-child(3) {
     padding: var(--spacer);
+    text-align: right;
   }
 }
 

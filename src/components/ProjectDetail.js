@@ -70,13 +70,14 @@ for (const property in object) {
     <div className="projectdetail--wrapper" style={{ background: `${props.project.bg}`,color: `${props.project.fg}` }}>
       <Nav />
 
-      <div className="projectdetail--header">
+      <div className="projectdetail--header_top">
           <img
-            className="projectdetail--img"
+            className="projectdetail--header_img"
             src={props.project.image}
             alt="project"
           />
       </div>
+      <div className="projectdetail--content"style={{ background: `${props.project.bg}`,color: `${props.project.fg}` }}>
       <div className="projectdetail_title">
           <h1 style={{ color: `${props.project.fg}` }}>{props.project.title}</h1>
         </div>
@@ -156,6 +157,7 @@ for (const property in object) {
             src={props.project.specImage4}
             alt="project"
           />
+      </div>
       </div>
         </div>
 

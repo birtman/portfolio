@@ -218,6 +218,8 @@ const projects = [
 
   {
     id: "1",
+    bg: "#130972",
+    fg: "#f78765",
     title: "Peter Gross Bau",
     subtitle: "",
     specs:

@@ -23,6 +23,8 @@ import PGManual5 from "../images/PGManual/PGManual5.png"
 const bread = [
   {
     id: "1",
+    bg: "#130972",
+      fg: "#f78765",
     title: "Peter Gross Bau",
     subtitle: "",
     specs:

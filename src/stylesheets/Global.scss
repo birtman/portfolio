@@ -54,7 +54,17 @@ $font-family-voyage: "Voyage";
   --font-size-lg: 2.75rem;
   --font-size-xl: 4.375rem;
   --font-size-xxl: 13rem;
+  --font-size-3xl: 16rem;
   --spacer: 3vw;
+  max-width: 100%;
+}
+
+body {
+  max-width: 100%;
+}
+
+.App {
+  max-width: 100%;
 }
 
 @media (max-width: 899.98px) {
@@ -65,6 +75,7 @@ $font-family-voyage: "Voyage";
     --font-size-lg: 2rem;
     --font-size-xl: 3.5rem;
     --font-size-xxl: 6rem;
+    --font-size-3xl: 10rem;
     --spacer: 2.5vw;
   }
 }
@@ -76,7 +87,8 @@ $font-family-voyage: "Voyage";
     --font-size-md: 20px;
     --font-size-lg: 28px;
     --font-size-xl: 40px;
-    --font-size-xxl: 6rem;
+    --font-size-xxl: 4rem;
+    --font-size-3xl: 4rem;
     --spacer: 2vw;
   }
 }

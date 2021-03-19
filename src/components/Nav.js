@@ -46,7 +46,7 @@ export default function Nav(props) {
       </div>
       <div className="nav--items">
         <Link to="/about" className="nav--links">
-          about  
+          about
         </Link>
       </div>
     </div>

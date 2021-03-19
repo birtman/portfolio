@@ -8,6 +8,7 @@ import { Link } from "react-router-dom";
 import "../stylesheets/Home.scss";
 import styled from "styled-components";
 import themes from "../data/themes";
+import CookieConsent from "react-cookie-consent";
 
 
 
@@ -35,6 +36,18 @@ useEffect(() => {
           Show all Projects
         </Link>
       </div>
+      <CookieConsent
+      debug={true}
+  location="bottom"
+  buttonText="I understand"
+  cookieName="myAwesomeCookieName2"
+  style={{ color: "#130972", background: "#19afd0" }}
+  buttonStyle={{ background: "#130972", color: "#f78765", fontSize: "13px" }}
+  expires={150}
+>
+  This website uses cookies to enhance the user experience.{" "}
+
+</CookieConsent>
       <Footer />
     </ThemeProvider>
   );

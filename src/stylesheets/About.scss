@@ -1,0 +1,26 @@
+@import "../stylesheets/Global.scss";
+
+.about--wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding-top: 20%;
+  color: $primary-color-1;
+  background-color: $primary-color-0;
+  font-family: $font-family-voyage;
+  z-index: 1000;
+  padding-bottom: 100px;
+  @include for-tablet-portrait-up {
+    padding-top: 20vh;
+  }
+  @include for-phone-only {
+    padding-top: 25vh;
+  }
+
+  p {
+    font-size: var(--font-size-lg);
+    padding: 2%;
+  }
+}
